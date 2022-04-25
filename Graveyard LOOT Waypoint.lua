@@ -1,11 +1,7 @@
 --This was created by JamieX
---NOTE: If the waypoint marker line disappears then the loot has DEspawned, re-execute the script to find new loot
---I cant stop this from happening, the owner has set a time limit on the spawns of loot.
-
---Be sure to set your username below so the waypoint can attach to you :)
-
-local Character = workspace:FindFirstChild("USERNAME HERE") --put your username here
-local found = nil
+local plyr = game.Players.LocalPlayer
+local Character = plyr.Character
+local found     = nil
 
 if game.CoreGui:FindFirstChild("FoundGui") ~= nil then
 game.CoreGui:FindFirstChild("FoundGui"):Destroy()
@@ -49,7 +45,7 @@ NotFoundFrame.BackgroundTransparency = 0.200
 NotFoundFrame.BorderColor3 = Color3.fromRGB(255, 113, 11)
 NotFoundFrame.BorderSizePixel = 2
 NotFoundFrame.Position = UDim2.new(0.499341726, 0, 0.368742377, 0)
-NotFoundFrame.Size = UDim2.new(0.265306115, 0, 0.122100122, 0)
+NotFoundFrame.Size = UDim2.new(0.465306115, 0, 0.122100122, 0)
 
 NotFoundTextLabel.Parent = NotFoundFrame
 NotFoundTextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -93,16 +89,18 @@ att2.Parent = chosen_loot
 found = true
 
 local newbeam         = Instance.new("Beam")
-newbeam.Texture       = "http://www.roblox.com/asset/?id=2326747"
-newbeam.TextureLength = 10
-newbeam.TextureMode   = "Stretch"
-newbeam.TextureSpeed  = 0.8
-newbeam.Segments      = 5
+newbeam.Texture       = "http://www.roblox.com/asset/?id=9467465915"
+newbeam.TextureLength = 2
+newbeam.TextureMode   = "Wrap"
+newbeam.TextureSpeed  = 1.8
+newbeam.Transparency = 0
+newbeam.Segments      = 10
 newbeam.Width0        = 3
 newbeam.Width1        = 3
 newbeam.Attachment0   = att1
 newbeam.Attachment1   = att2
-newbeam.Name = "Beam"
+newbeam.Name          = "Beam"
+newbeam.FaceCamera    = true
 newbeam.Parent        = Character:FindFirstChild("Torso")
 
 print("Waypoint Added!")
