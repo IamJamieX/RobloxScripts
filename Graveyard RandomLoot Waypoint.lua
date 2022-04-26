@@ -88,20 +88,19 @@ att2.Parent = chosen_loot
 
 found = true
 
-local newbeam         = Instance.new("Beam")
-newbeam.Texture       = "http://www.roblox.com/asset/?id=9467465915"
+local newbeam = Instance.new("Beam")
+newbeam.Texture = "http://www.roblox.com/asset/?id=9467465915"
 newbeam.TextureLength = 2
-newbeam.TextureMode   = "Wrap"
-newbeam.TextureSpeed  = 1.8
-newbeam.Transparency = 0
-newbeam.Segments      = 10
-newbeam.Width0        = 3
-newbeam.Width1        = 3
-newbeam.Attachment0   = att1
-newbeam.Attachment1   = att2
-newbeam.Name          = "Beam"
-newbeam.FaceCamera    = true
-newbeam.Parent        = Character:FindFirstChild("Torso")
+newbeam.TextureMode = "Wrap"
+newbeam.TextureSpeed = 1.8
+newbeam.Segments = 10
+newbeam.Width0 = 3
+newbeam.Width1 = 3
+newbeam.Attachment0 = att1
+newbeam.Attachment1 = att2
+newbeam.Name = "Beam"
+newbeam.FaceCamera = true
+newbeam.Parent = Character:FindFirstChild("Torso")
 
 print("Waypoint Added!")
 
