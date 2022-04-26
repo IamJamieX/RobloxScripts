@@ -1,7 +1,7 @@
 --This was created by JamieX
 local plyr = game.Players.LocalPlayer
 local Character = plyr.Character
-local found     = nil
+local found = nil
 
 if game.CoreGui:FindFirstChild("FoundGui") ~= nil then
 game.CoreGui:FindFirstChild("FoundGui"):Destroy()
@@ -78,8 +78,8 @@ NotFoundGui:Destroy()
 else
 local chosen_loot = lootParts[math.random(1, #lootParts)]
 
-local att1  = Instance.new("Attachment")
-att1.Name   = "Att1"
+local att1 = Instance.new("Attachment")
+att1.Name = "Att1"
 att1.Parent = Character:FindFirstChild("Torso")
 
 local att2 = Instance.new("Attachment")
