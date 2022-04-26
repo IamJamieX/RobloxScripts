@@ -1,3 +1,4 @@
+--This was created by JamieX
 local plyr = game.Players.LocalPlayer
 local Character = plyr.Character
 local found = nil
