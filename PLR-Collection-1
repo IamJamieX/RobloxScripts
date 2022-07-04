@@ -1,0 +1,19 @@
+REMOVE TOILETS
+------------------------
+loadstring(game:HttpGet("https://raw.githubusercontent.com/IamJamieX/RobloxScripts/main/Remove%20Toilets.lua", true))()
+
+CTRL+CLICK to TP
+------------------------
+loadstring(game:HttpGet("https://raw.githubusercontent.com/IamJamieX/RobloxScripts/main/CTLR%20click%20to%20TP.lua", true))()
+
+Fast Break Slots
+------------------------
+loadstring(game:HttpGet("https://raw.githubusercontent.com/IamJamieX/RobloxScripts/main/FastSlotBreaker.lua", true))()
+
+Auto Take Cash
+------------------------
+loadstring(game:HttpGet("https://raw.githubusercontent.com/IamJamieX/RobloxScripts/main/FastTakeCash.lua", true))()
+
+Always Day (Not in vid, but useful)
+-----------------------------------------
+loadstring(game:HttpGet("https://raw.githubusercontent.com/IamJamieX/RobloxScripts/main/AlwaysDay.lua", true))()
